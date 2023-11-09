@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock, Paper, Scissors!</title>
+        <link rel="icon" type="image/png" href="rps.png">        
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Rock, Paper, Scissors!</h1>
+            <p class="intro">
+                This is a game of Rock, Paper, Scissors against a computer. Your goal is to beat the computer at this game. Click one of the colored buttons to make your choice and the computer will try to beat you. Press the reset button if you want to reset the game back to 0.
+            </p>
+            <div class="answer1">
+                <div class="image-container">
+                    <div class="choice-container">
+                        <div class="names">User:
+                            <div id="img"></div>
+                        </div>
+                    </div>
+                    <div id="names2">?</div>
+                    <div class="choice-container" style="grid-column: 3;">
+                        <div class="names">Computer:
+                            <div id="img2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="info">
+                <div>
+                    <span class="names">User score:</span>
+                    <span id="computer-score1">0</span>
+                </div>
+                <div>
+                    <span class="names">Computer score:</span>
+                    <span id="computer-score2">0</span>
+                </div>
+            </div>
+            <div class="button-container">
+                <button id="rock">Rock</button>
+                <button id="paper">Paper</button>
+                <button id="scissors">Scissors</button> 
+                <button id="resetBtn">Reset</button>  
+            </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

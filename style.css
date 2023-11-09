@@ -1,0 +1,135 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bbb4b4;
+    overscroll-behavior: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#rock, #paper, #scissors {
+    transition-duration: 0.4s;
+}
+
+#rock {
+    background-color: #f11919;
+}
+
+#rock:hover {
+    background-color: #a90000;
+}
+
+#paper {
+    background-color: #18d53e;
+}
+
+#paper:hover {
+    background-color: #149a2f;
+}
+
+#scissors {
+    background-color: #007BFF;
+}
+
+#scissors:hover {
+    background-color: #0052a9;
+}
+
+button {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#info, .intro, .answer1 {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    width: 90%;
+    max-width: 700px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
+
+.button-container {
+   display: flex; 
+   justify-content: center; 
+   gap: 10px; 
+}
+
+.image-container {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 0px 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    justify-items: center;
+    height: 118px;
+    position: relative;
+}
+
+#names2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 34px;
+    color: #333;
+}
+
+.names {
+    font-weight: 700;
+    color: #333;
+}
+
+img {
+    height: 100px;
+}
+
+.choice-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;   
+}
+
+#resetBtn {
+    background-color: #6c757d;
+    transition-duration: 0.4s; 
+}
+
+#resetBtn:hover {
+    background-color: #585c60;
+    transition-duration: 0.4s; 
+}
+
+#img2 {
+    grid-column: 3;
+}
